@@ -25,7 +25,7 @@ if col1.button("Stop Camera"):
     st.session_state.run_camera = False
 
 # Gemini AI setup
-genai.configure(api_key="AIzaSyDBHwLxjpSfm_ur6ZMP0y-F7eW9U5cZB8M")
+genai.configure(api_key="YOUR API KEY")
 model = genai.GenerativeModel('gemini-2.0-flash')
 
 # Hand detector
