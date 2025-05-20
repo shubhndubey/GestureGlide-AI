@@ -1,0 +1,202 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f3f4f7, #e8ebf2);
+    color: #333;
+}
+
+.navbar {
+    background-color: rgb(8, 54, 30);
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 15px;
+}
+.navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.navbar .logo {
+    background-image: url("backkid.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+}
+.navbar .logo-text{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.navbar ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #ff7c7c;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 124, 124, 0.6);
+}
+
+
+.body-content {
+    height: 100vh;
+    background-image: url("2nd.png");
+    background-size: cover;
+    background-position: center right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    animation: fadeIn 1.5s ease;
+}
+
+.content-container {
+    background: rgba(255, 255, 255, 0); 
+    border-radius: 15px;
+    padding: 40px;
+    max-width: 600px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    animation: slideUp 1.5s ease-out; /* Smoother animation */
+    text-align: center;
+    
+    /* Center the container using fixed positioning */
+    position: fixed; /* Fixed positioning for centering */
+    top: 50%; /* 50% from the top */
+    left: 50%; /* 50% from the left */
+    transform: translate(-50%, -50%); /* Adjust to center properly */
+
+    z-index: 1000; /* Ensures it stays above any background or elements */
+}
+
+
+.quote p {
+    margin: 10px 0;
+}
+
+.p1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fcdada;
+}
+
+.p2 {
+    font-size: 1.5rem;
+    color: #edcbcb;
+}
+
+.p3 {
+    font-size: 1.3rem;
+    color: #f5c2e5;
+    font-weight: 600;
+}
+
+span {
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: underline;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Buttons */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+button {
+    background: linear-gradient(45deg, #ff7c7c, #ff4b4b);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 124, 124, 0.4);
+    transition: 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    /* background: linear-gradient(45deg, #ff4b4b, #e63946); */
+    box-shadow: 0 6px 15px rgba(230, 57, 70, 0.6);
+    transform: translateY(-3px);
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+button:hover::before {
+    opacity: 1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        color: #e4afa9;
+    }
+    50% {
+        color: #e1d4d4;
+    }
+}
+
+
+       

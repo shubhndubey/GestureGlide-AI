@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body {
+    height: 100%;
+    margin: 0;
+  }
+.navbar {
+    background-color:darkslategrey;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+    display: flex;
+    gap: 15px;
+}
+.navbar .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.navbar .logo {
+    background-image: url("backkid.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    margin-right: 10px; 
+}
+.navbar .logo-text{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.navbar ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    background: #ff7c7c;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 124, 124, 0.6);
+}
+
+/* Main content area styling */
+.body-content {
+    height: 100vh; /* Full viewport height */
+    background-image:url(2nd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 20px;
+}
+
+/* Contact form container styling */
+.contact-container {
+    width: 100%; /* Full width */
+    max-width: 600px; /* Max width for the box */
+    background:rgba(255, 255, 255, 0.1); /* White background */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center text */
+}
+
+/* Title styling */
+.contact-title {
+    font-size: 2.5em;
+    color: #f2d3d3; /* Darker title color */
+    margin-bottom: 10px;
+}
+
+/* Description styling */
+.contact-description {
+    font-size: 1.1em;
+    color: #f2f6f5; /* Gray color for description */
+    margin-bottom: 20px;
+}
+
+/* Contact form styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input field styling */
+.contact-form input,
+.contact-form textarea {
+    font-size: 1em;
+    padding: 12px;
+    border: 2px solid #007bff; /* Blue border */
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ffcc00; /* Yellow on focus */
+}
+
+/* Button styling */
+.contact-form button {
+    color: #ffffff; /* White text */
+    font-size: 1.2em;
+    padding: 12px 30px;
+    background-color: #007bff; /* Blue background */
+    border: none; /* Remove border */
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+/* Button hover effect */
+.contact-form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Responsive adjustments */
+@media (maxwidth: 768px) {
+    .contact-container {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .contact-title {
+        font-size: 2em; /* Smaller title on mobile */
+    }
+
+    .contact-description {
+        font-size: 1em; /* Smaller description on mobile */
+    }
+}
+/* Chatbot Button Styling */
+
+.chatbot-container {
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 20%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center; /* Center the text below the button */
+}
+
+.chatbot-toggle {
+    background-image: url('chbutton.jpeg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    width: 100px; /* Adjust width */
+    height: 100px; /* Adjust height */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chatbot-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.chatbot-label {
+    font-size: 20px; /* Adjust font size */
+    margin-top: 8px; /* Add spacing between button and label */
+    color: #fc0404; /* Text color */
+    font-weight:bolder; /* Make the text bold */
+}
+/*chatbot button end */
